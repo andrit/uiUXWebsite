@@ -1,0 +1,6 @@
+.card-item{width:25%; min-height:250px;}
+.card-item-width-2{width:50%;}
+.card-item-width-3{width:75%;}
+.card-item-width-4{width:100%;}
+
+.card-item img{height:100%; width:100%;  border:1px solid #333;}

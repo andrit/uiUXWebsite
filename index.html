@@ -3,17 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ui</title>
+	<link rel="stylesheet" href="css/vendors/lightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="masongrid"></div>
+	<div class="wall">
+		<div class="card-item">
+			<a href="img/coolcolors.jpg" data-lightbox="lightpictures">
+				<img src="img/coolcolors.jpg" alt="" />
+			</a>
+		</div>
+		<div class="card-item">
+			<a href="img/coolspins.jpg" data-lightbox="lightpictures">
+				<img src="img/coolspins.jpg" alt="" />
+			</a>
+		</div>
+		<div class="card-item card-item-width-2">
+			<a href="img/dancinglights.jpg" data-lightbox="lightpictures">
+				<img src="img/dancinglights.jpg" alt="" />
+			</a>
+		</div>
+		<div class="card-item">
+			<a href="img/blueLines.jpg" data-lightbox="lightpictures">
+				<img src="img/blueLines.jpg" alt="" />
+			</a>
+		</div>
+	</div>
 </body>
-
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src= "js/jslibs/lightbox.min.js"></script>
 <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 <script>
-$('.masongrid').masonry({
+$('.wall').masonry({
   // options...
-  itemSelector: '.grid-item',
+  itemSelector: '.card-item',
   columnWidth: 200
 });
+</script>
+<script>
+	//forEach card-item pass in i from array of pictures 
+	//for each i add variable src as background image plus no-repeat and width and size //defined by the card-item width and height
 </script>
 </html>
